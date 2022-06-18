@@ -1,0 +1,32 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BibliotecaPOE
+{
+    public class Persona
+    {
+        private string cedula;
+        public string Cedula { get { return cedula; } set { cedula = value; } }
+
+        private string nombre;
+        public string Nombre { get { return nombre; } set { nombre = value; } }
+
+        private string apellido;
+        public string Apellido { get { return apellido; } set { apellido = value; } }
+
+        public Persona(string cedula, string nombre, string apellido)
+        {
+            this.cedula = cedula;
+            this.nombre = nombre;
+            this.apellido = apellido;
+        }
+        public Persona()
+        {
+        }        
+
+    }
+    
+}
